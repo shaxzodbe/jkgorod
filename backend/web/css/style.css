@@ -1,0 +1,20 @@
+#ordersTable th a.desc:after,
+#ordersTable th a.asc:after {
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+#ordersTable th a.desc:after {
+    content: "\f078";
+}
+
+#ordersTable th a.asc:after {
+    content: "\f077";
+}
