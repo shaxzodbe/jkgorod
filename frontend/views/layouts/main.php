@@ -28,7 +28,7 @@ AppAsset::register($this);
     <nav class="navbar navbar-expand-lg bg-transparent py-3 shadow-none" id="home">
         <div class="container">
             <a class="navbar-brand w-8" href="#" data-config-id="brand">
-<!--                <img src="" width="80" alt="">-->
+                <!--                <img src="" width="80" alt="">-->
                 <?php echo Html::img('@web/image/2022-09-26_14-10.png', ['alt'=>'some', 'class'=>'thing', 'style' => 'width: 80px']) ?>
             </a>
             <ul class="d-flex align-items-center justify-content-sm-center mb-0 ms-auto">
@@ -71,7 +71,7 @@ AppAsset::register($this);
                         <a href="#contact" class="nav-link ps-2 cursor-pointer"><?= Yii::t('app', 'Contact') ?></a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="tel:123-456-7890" class="btn mb-0 bg-gradient-warning cursor-pointer">
+                        <a href="tel:+998983359999" class="btn mb-0 bg-gradient-warning cursor-pointer">
                             <?= Yii::t('app', 'Contact Us') ?>
                         </a>
                     </li>
@@ -88,31 +88,21 @@ AppAsset::register($this);
                 <div class="col-lg-3 mb-5 mb-lg-0">
                     <h6 class="text-uppercase mb-2"><?= Yii::t('app', 'Houses') ?></h6>
                     <p class="mb-4 pb-2"><?= Yii::t('app', 'Find your next home.') ?></p>
-                    <ul class="flex ms-n3 nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#about-us">
-                                tg
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="">
-                                Instag
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="">
-                                facebook
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="" class="text-secondary me-xl-4 me-3">
+                        <span class="text-lg fab fa-facebook" aria-hidden="true"></span>
+                    </a>
+                    <a href="https://t.me/+998973359999" class="text-secondary me-xl-4 me-3">
+                        <span class="text-lg fab fa-telegram" aria-hidden="true"></span>
+                    </a>
+                    <a href="#" class="text-secondary me-xl-4 me-3">
+                        <span class="text-lg fab fa-instagram" aria-hidden="true"></span>
+                    </a>
+                    <a href="tel:+998983359999" class="text-secondary me-xl-4 me-3">
+                        <span class="text-lg fas fa-phone" aria-hidden="true"></span>
+                    </a>
+                    <a href="mailto:jkgorod@gmail.com" class="text-secondary me-xl-4 me-3">
+                        <span class="text-lg fas fa-envelope" aria-hidden="true"></span>
+                    </a>
                 </div>
                 <div class="col-md-2 col-6 ms-lg-auto mb-md-0 mb-4">
                     <h6 class="text-sm">Company</h6>

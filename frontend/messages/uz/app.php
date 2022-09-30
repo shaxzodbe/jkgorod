@@ -1,6 +1,11 @@
 <?php
 return array(
     'Houses' => 'Uylar',
+    'Username' => 'Ismingiz',
+    'Telephone number' => 'Telefon raqamingiz',
+    'Submit' => 'Yuborish',
+    'Leave a request' => 'Murojaat qoldiring',
+    'Contacts' => 'Kontaktlar',
     'One step closer to your dream house' => 'Orzu qilgan uyingizga bir qadam yaqinroq',
     'About our activities' => 'Faoliyatimiz haqida',
     'View Properties for Sale' => 'Sotish uchun xususiyatlarni ko\'rish',
