@@ -8,11 +8,11 @@
 /** @var \frontend\controllers\SiteController $saleData */
 /** @var \frontend\controllers\SiteController $articleData */
 /** @var \frontend\controllers\SiteController $blogData */
-
 /** @var \frontend\controllers\SiteController $contactData */
 
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
+use yii\widgets\MaskedInput;
 
 $this->title = "jkgorod"
 ?>
@@ -77,7 +77,7 @@ $this->title = "jkgorod"
     </div>
 </section>
 
-<section class="py-5" id="contact-us">
+<section class="py-5" id="contact">
     <div class="container">
         <div class="col-12">
             <h3 class="mb-5 text-center" spellcheck="false"><?= Yii::t('app', 'Contacts') ?></h3>
@@ -89,12 +89,30 @@ $this->title = "jkgorod"
 
                 <?php $form = ActiveForm::begin(); ?>
 
-                <?= $form->field($contactData, 'username')->textInput(['autofocus' => true])->label(Yii::t('app','Username')) ?>
+                <?= $form->field($contactData, 'username')->textInput()->label(Yii::t('app','Username')) ?>
 
-                <?= $form->field($contactData, 'number')->textInput(['type' => 'number'])->label(Yii::t('app','Telephone number')) ?>
+                <?= $form->field($contactData, 'number')->widget(MaskedInput::class, [
+                    'mask' => '+9[9][9] (99) 999-99-99',
+                    /*'mask' => [
+                        '+7 (999) 999-99-99',
+                        '+2 (999) 999-99-99',
+                        '+324 (999) 999-99-99',
+                        '+32[9] (999) 999-99-99',
+                        '+964 (999) 999-99-99',
+                        //...
+                    ],*/
+                    'options' => [
+                        'class' => 'form-control placeholder-style',
+                        'placeholder' => ('Телефон')
+                    ],
+                    'clientOptions' => [
+                        'greedy' => false,
+                        'clearIncomplete' => true
+                    ]
+                ])->label(Yii::t('app','Telephone number')) ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton(Yii::t('app','Submit'), ['class' => 'btn btn-primary btn-block m-auto', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton(Yii::t('app','Submit'), ['class' => 'btn btn-primary btn-block m-auto']) ?>
                 </div>
 
                 <?php ActiveForm::end(); ?>
@@ -102,7 +120,6 @@ $this->title = "jkgorod"
             <div class="col-lg-8 col-sm-12 mb-lg-3 mb-4" style="overflow: hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.752130862991!2d69.31827281582403!3d41.31425557927105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef531308f9705%3A0x97214ee2fbf81605!2z0JzQsNCy0LvQvtC90L4g0KDQuNGR0LfQuNC5IDI!5e0!3m2!1sru!2s!4v1664520251701!5m2!1sru!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-
             </div>
         </div>
 

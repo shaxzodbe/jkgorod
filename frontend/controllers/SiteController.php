@@ -7,11 +7,9 @@ use common\models\Article;
 use common\models\Blog;
 use common\models\Contact;
 use common\models\Content;
-use common\models\LoginForm;
 use common\models\Sale;
 use Yii;
-use yii\filters\AccessControl;
-use yii\filters\VerbFilter;
+use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 
 /**
@@ -19,6 +17,9 @@ use yii\web\Controller;
  */
 class SiteController extends Controller
 {
+    /**
+     * @throws BadRequestHttpException
+     */
     public function beforeAction($action)
     {
         if (!Yii::$app->session->has('language')) {
@@ -37,6 +38,12 @@ class SiteController extends Controller
         $blogData = Blog::find()->one();
         $contactData = new Contact();
 
+        if ($this->request->isPost) {
+            if ($contactData->load($this->request->post()) && $contactData->save()) {
+                return $this->refresh();
+            }
+        }
+
         return $this->render('index', [
             'contentData' => $contentData,
             'aboutData' => $aboutData,
@@ -45,19 +52,6 @@ class SiteController extends Controller
             'blogData' => $blogData,
             'contactData' => $contactData,
         ]);
-    }
-
-
-    /**
-     * Logs out the current user.
-     *
-     * @return mixed
-     */
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
     }
 
     public function actionLanguage($language)
