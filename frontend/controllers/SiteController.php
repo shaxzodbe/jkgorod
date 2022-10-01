@@ -5,11 +5,20 @@ namespace frontend\controllers;
 use common\models\About;
 use common\models\Article;
 use common\models\Blog;
+<<<<<<< HEAD
 use common\models\Contact;
 use common\models\Content;
 use common\models\Sale;
 use Yii;
 use yii\web\BadRequestHttpException;
+=======
+use common\models\Content;
+use common\models\LoginForm;
+use common\models\Sale;
+use Yii;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
 use yii\web\Controller;
 
 /**
@@ -18,8 +27,39 @@ use yii\web\Controller;
 class SiteController extends Controller
 {
     /**
+<<<<<<< HEAD
      * @throws BadRequestHttpException
      */
+=======
+     * {@inheritdoc}
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'actions' => ['login', 'language'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['logout', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::class,
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
+        ];
+    }
+
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
     public function beforeAction($action)
     {
         if (!Yii::$app->session->has('language')) {
@@ -36,6 +76,7 @@ class SiteController extends Controller
         $saleData = Sale::find()->all();
         $articleData = Article::find()->all();
         $blogData = Blog::find()->one();
+<<<<<<< HEAD
         $contactData = new Contact();
 
         if ($this->request->isPost) {
@@ -43,6 +84,8 @@ class SiteController extends Controller
                 return $this->refresh();
             }
         }
+=======
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
 
         return $this->render('index', [
             'contentData' => $contentData,
@@ -50,10 +93,51 @@ class SiteController extends Controller
             'saleData' => $saleData,
             'articleData' => $articleData,
             'blogData' => $blogData,
+<<<<<<< HEAD
             'contactData' => $contactData,
         ]);
     }
 
+=======
+        ]);
+    }
+
+    /**
+     * Logs in a user.
+     *
+     * @return mixed
+     */
+    public function actionLogin()
+    {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        }
+
+        $model->password = '';
+
+        return $this->render('login', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Logs out the current user.
+     *
+     * @return mixed
+     */
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+
+        return $this->goHome();
+    }
+
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
     public function actionLanguage($language)
     {
         if ($language == 'ru') {

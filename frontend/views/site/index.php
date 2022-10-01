@@ -3,6 +3,7 @@
  * @author <sulaymanovshaxzod@gmail.com>
  */
 
+<<<<<<< HEAD
 /** @var \frontend\controllers\SiteController $contentData */
 /** @var \frontend\controllers\SiteController $aboutData */
 /** @var \frontend\controllers\SiteController $saleData */
@@ -13,6 +14,15 @@
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 use yii\widgets\MaskedInput;
+=======
+/** @var \frontend\controllers\SiteController  $contentData */
+/** @var \frontend\controllers\SiteController  $aboutData */
+/** @var \frontend\controllers\SiteController  $saleData */
+/** @var \frontend\controllers\SiteController  $articleData */
+/** @var \frontend\controllers\SiteController  $blogData */
+
+use yii\bootstrap5\Html;
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
 
 $this->title = "jkgorod"
 ?>
@@ -71,11 +81,16 @@ $this->title = "jkgorod"
     <div class="container position-relative z-index-2">
         <div class="row">
             <?= $this->render('_blog_section', [
+<<<<<<< HEAD
                 'model' => $blogData
+=======
+                    'model' => $blogData
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
             ]) ?>
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 
 <section class="py-5" id="contact">
     <div class="container">
@@ -125,3 +140,5 @@ $this->title = "jkgorod"
 
     </div>
 </section>
+=======
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b

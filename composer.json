@@ -2,11 +2,16 @@
     "name": "yiisoft/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
     "keywords": ["yii2", "framework", "advanced", "project template"],
+<<<<<<< HEAD
     "homepage": "https://www.yiiframework.com/",
+=======
+    "homepage": "http://www.yiiframework.com/",
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+<<<<<<< HEAD
         "forum": "https://www.yiiframework.com/forum/",
         "wiki": "https://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
@@ -23,10 +28,36 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
+=======
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0 | 8.1",
+        "yiisoft/yii2": "~2.0.45",
+        "yiisoft/yii2-symfonymailer": "~2.0.3",
+        "swiftmailer/swiftmailer": "^6.0",
+        "yiisoft/yii2-bootstrap5": "2.0.x-dev",
+        "2amigos/yii2-ckeditor-widget": "^2.2"
+    },
+    "require-dev": {
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
         "yiisoft/yii2-debug": "~2.1.0",
         "yiisoft/yii2-gii": "~2.2.0",
         "yiisoft/yii2-faker": "~2.0.0",
         "phpunit/phpunit": "~9.5.0",
+<<<<<<< HEAD
+=======
+        "codeception/codeception": "^5.0.0 || ^4.0",
+        "codeception/lib-innerbrowser": "^3.0 || ^1.1",
+        "codeception/module-asserts": "^3.0 || ^1.1",
+        "codeception/module-yii2": "^1.1",
+        "codeception/module-filesystem": "^3.0 || ^1.1",
+        "codeception/verify": "^2.2",
+>>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
         "symfony/browser-kit": "^6.0 || >=2.7 <=4.2.4"
     },
     "config": {
