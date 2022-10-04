@@ -18,11 +18,6 @@
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-body-color: #67748e;
-<<<<<<< HEAD
-    --bs-primary: #2152ff;
-=======
-    --bs-primary: #cb0c9f;
->>>>>>> 59ea0495131e6a4a90e3da7e838037e08155b15b
     --bs-secondary: #8392ab;
     --bs-success: null;
     --bs-info: #17c1e8;
@@ -2411,7 +2406,6 @@ textarea.form-control-sm {
     filter: brightness(99%);
 }
 .form-check-input:focus {
-    border-color: none;
     outline: 0;
     box-shadow: none;
 }
