@@ -10,22 +10,10 @@ $language = Yii::$app->session->get('language');
 ?>
 
 <header>
-    <div class="page-header min-vh-50 m-3 p-4 border-radius-xl py-9"
-         style="background-image: url(<?php echo $model->getImageUrl() ?>);">
-        <span class="mask bg-gradient-dark opacity-7"></span>
-        <div class="container h-100">
-            <div class="row">
-                <div class="col-lg-5 mt-auto justify-content-bottom my-auto">
-
-                    <h5 class="text-gradient text-warning fadeIn1 fadeInBottom text-warning mb-0 font-weight-bolder">
-                        <?php echo $model['title_' . $language] ?>
-                    </h5>
-                    <h1 class="text-white fadeIn2 fadeInBottom mb-4 display-4 font-weight-bolder"
-                        spellcheck="false"><?php echo $model['subtitle_' . $language] ?>
-                    </h1>
-
-                </div>
-            </div>
-        </div>
+    <div class="page-header border-radius-xl img-fluid border-radius-lg shadow m-3 p-4"
+         style="background-image: url(<?php echo $model->getImageUrl() ?>); background-repeat: no-repeat;
+                 background-size: contain; height: auto;
+                 max-width: 100%; aspect-ratio: 1268/506; object-fit: contain">
+<!--        <div class="mask"></div>-->
     </div>
 </header>
