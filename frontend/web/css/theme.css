@@ -15546,15 +15546,7 @@ fieldset:disabled .btn {
     color: #fff;
     transition: bottom 0.35s ease;
 }
-.page-header {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-position: 50%;
-}
+
 .page-header .container {
     z-index: 1;
 }
