@@ -50,14 +50,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
                 'attribute' => 'surface',
+                'format'=>['decimal',1],
                 'label' => 'Площадь'
             ],
             [
                 'attribute' => 'cost',
+                'format'=>['decimal',1],
                 'label' => 'Спальни'
             ],
             [
                 'attribute' => 'bedrooms',
+                'format'=>['decimal',1],
                 'label' => 'Ванная'
             ],
             [

@@ -23,10 +23,10 @@ $language = Yii::$app->session->get('language');
             <div class="card-body pt-3">
                 <div class="d-flex align-items-center">
                     <div>
-                        <a href="javascript:;"
-                           class="card-title h4 d-block text-darker font-weight-bolder mb-0">
-                            <?php echo $model[$item]['cost'] ?> USD
-                        </a>
+<!--                        <a href="javascript:;"-->
+<!--                           class="card-title h4 d-block text-darker font-weight-bolder mb-0">-->
+<!--                            --><?php //echo $model[$item]['cost'] ?><!-- USD-->
+<!--                        </a>-->
                         <p class="card-description mb-4 text-sm">
                             <?php echo $model[$item]['info_'.$language]?>
                         </p>

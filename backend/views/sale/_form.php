@@ -23,15 +23,15 @@ use yii\bootstrap5\ActiveForm;
     <?= $form->field($model, 'info_ru')->textInput(['maxlength' => true])->label('Информация на русском') ?>
 
     <?= $form->field($model, 'surface')->textInput([
-            'type' => 'number'
+            'type' => 'float'
     ])->label('Площадь') ?>
 
     <?= $form->field($model, 'bedrooms')->textInput([
-        'type' => 'number'
+        'type' => 'float'
     ])->label('Спальни') ?>
 
     <?= $form->field($model, 'bathrooms')->textInput([
-        'type' => 'number'
+        'type' => 'float'
     ])->label('Ванная') ?>
 
     <?= $form->field($model, 'imageFile', [

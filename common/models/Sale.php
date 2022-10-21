@@ -50,7 +50,8 @@ class Sale extends \yii\db\ActiveRecord
         return [
             [['info_uz', 'info_ru'], 'required'],
             [['cost', 'surface', 'bedrooms', 'bathrooms', 'created_at', 'updated_at'], 'default', 'value' => null],
-            [['cost', 'surface', 'bedrooms', 'bathrooms', 'created_at', 'updated_at'], 'integer'],
+            [['created_at', 'updated_at'], 'integer'],
+            [['cost', 'surface', 'bedrooms', 'bathrooms'], 'number'],
             [['info_uz', 'info_ru'], 'string', 'max' => 25],
             [['image'], 'string', 'max' => 2000],
         ];
