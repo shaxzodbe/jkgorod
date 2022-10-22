@@ -48,7 +48,7 @@ class Blog extends \yii\db\ActiveRecord
             [['text_uz', 'text_ru', 'file'], 'required'],
             [['created_at', 'updated_at'], 'default', 'value' => null],
             [['created_at', 'updated_at'], 'integer'],
-            [['text_uz', 'text_ru', 'file'], 'string', 'max' => 255],
+            [['text_uz', 'text_ru', 'file'], 'string', 'max' => 2000],
         ];
     }
 
