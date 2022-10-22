@@ -13,7 +13,7 @@ $language = Yii::$app->session->get('language');
     <div class="col-lg-4 mb-lg-3 mb-4">
         <div class="card">
             <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                <a href="javascript:;" class="d-block">
+                <a href="" class="d-block">
                     <img src="<?php echo $value->getImageUrl() ?>"
                          class="img-fluid border-radius-lg shadow"
                          style="min-height: 212px;">
@@ -40,7 +40,7 @@ $language = Yii::$app->session->get('language');
                             <div class="ms-3">
                                 <p class="text-xs mb-0"><?=Yii::t('app','Surface')?></p>
                                 <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['surface']?>m
-                                    <small class="position-absolute text-xs justify-align-top mt-n0">2</small>
+                                    <small class="position-absolute justify-align-top mt-n0">2</small>
                                 </h6>
                             </div>
                         </div>

@@ -87,14 +87,14 @@ AppAsset::register($this);
                 <div class="col-lg-3 mb-5 mb-lg-0">
                     <h6 class="text-uppercase mb-2"><?= Yii::t('app', 'Houses') ?></h6>
                     <p class="mb-4 pb-2"><?= Yii::t('app', 'Find your next home.') ?></p>
-                    <a href="javascript:;" class="text-secondary me-xl-4 me-3">
+                    <a href="" class="text-secondary me-xl-4 me-3">
                         <a href="" class="text-secondary me-xl-4 me-3"></a>
                         <span class="text-lg fab fa-facebook" aria-hidden="true"></span>
                     </a>
                     <a href="https://t.me/+998973359999" class="text-secondary me-xl-4 me-3">
                         <span class="text-lg fab fa-telegram" aria-hidden="true"></span>
                     </a>
-                    <a href="javascript:;" class="text-secondary me-xl-4 me-3">
+                    <a href="" class="text-secondary me-xl-4 me-3">
                         <a href="#" class="text-secondary me-xl-4 me-3">
                             <span class="text-lg fab fa-instagram" aria-hidden="true"></span>
                         </a>

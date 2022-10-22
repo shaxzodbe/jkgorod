@@ -12,7 +12,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap',
         'https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-icons.css',
         'https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-svg.css',
         'css/loopple.css',

@@ -88,9 +88,9 @@ $this->title = "jkgorod"
                 <div class="info">
                     <div class="address">
                         <h4>Локация:</h4>
-                        <a href="" class="me-xl-4 me-3">
+                        <a href="" class="d-flex me-xl-4 me-3">
                             <span class="text-lg fas fa-map" aria-hidden="true"></span>
-                            <p class="d-inline-block">100007, Ташкент, Яшнабадский район, Мавляна Риёзи, 47</p>
+                            <p class="ms-2">100007, Ташкент, Яшнабадский район, Мавляна Риёзи, 47</p>
                         </a>
                     </div>
                     <div class="email"><h4>Электронная почта:</h4>
