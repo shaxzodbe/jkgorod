@@ -11,7 +11,7 @@ $language = Yii::$app->session->get('language');
 <?php foreach ($model as $item => $value): ?>
 
     <div class="col-lg-4 col-md-6">
-        <div class="card card-blog card-plain">
+        <div class="card card-blog card-plain mb-4 mb-lg-0">
             <div class="position-relative">
                 <a class="d-block blur-shadow-image">
                     <img src="<?php echo $value->getImageUrl() ?>"
@@ -21,7 +21,7 @@ $language = Yii::$app->session->get('language');
                     >
                 </a>
             </div>
-            <div class="card-body px-1 pt-3">
+            <div class="card-body px-3 pt-3">
                 <a href="javascript:;">
                     <h5>
                         <?php echo $model[$item]['title_'.$language] ?>

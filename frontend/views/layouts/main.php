@@ -19,18 +19,21 @@ AppAsset::register($this);
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
+        <link rel="apple-touch-icon" sizes="180x180" href="@web/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="@web/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="@web/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <?php $this->head() ?>
     </head>
     <body class="d-flex flex-column h-100">
     <?php $this->beginBody() ?>
 
-
     <nav class="navbar navbar-expand-lg bg-transparent py-3 shadow-none" id="home">
         <div class="container">
-            <a class="navbar-brand w-8" href="#" data-config-id="brand">
-                <?php echo Html::img('@web/image/2022-09-26_14-10.png', ['alt' => 'some', 'class' => 'thing', 'style' => 'width: 80px']) ?>
+            <a class="navbar-brand w-8" href="" data-config-id="brand">
+                <?php echo Html::img('@web/image/logo3.png', ['alt' => 'logo', 'class' => 'thing', 'style' => 'width: 70px']) ?>
             </a>
-            <ul class="d-flex align-items-center justify-content-sm-center mb-0 ms-auto">
+            <ul class="language d-flex align-items-center justify-content-sm-center mb-0 ms-auto">
                 <li class="nav-item mx-2" style="list-style-type: none">
                     <?= Html::a(Yii::t('app', 'RU'), ['site/language', 'language' => 'ru', 'class' => 'nav-link ps-2 cursor-pointer']) ?>
                 </li>
@@ -43,14 +46,14 @@ AppAsset::register($this);
 
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon mt-2">
+                    aria-label="Toggle navigation" style="border: none !important">
+                <span class="navbar-toggler-icon">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
                     <span class="navbar-toggler-bar bar3"></span>
                 </span>
             </button>
-            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+            <div class="collapse navbar-collapse w-100 pb-2 py-lg-0" id="navigation">
                 <ul class="navbar-nav navbar-nav-hover ms-auto">
                     <li class="nav-item mx-2">
                         <a href="#home" class="nav-link ps-2 cursor-pointer">
@@ -87,23 +90,6 @@ AppAsset::register($this);
                 <div class="col-lg-3 mb-5 mb-lg-0">
                     <h6 class="text-uppercase mb-2"><?= Yii::t('app', 'Houses') ?></h6>
                     <p class="mb-4 pb-2"><?= Yii::t('app', 'Find your next home.') ?></p>
-                    <a href="" class="text-secondary me-xl-4 me-3">
-                        <a href="" class="text-secondary me-xl-4 me-3"></a>
-                        <span class="text-lg fab fa-facebook" aria-hidden="true"></span>
-                    </a>
-                    <a href="https://t.me/+998973359999" class="text-secondary me-xl-4 me-3">
-                        <span class="text-lg fab fa-telegram" aria-hidden="true"></span>
-                    </a>
-                    <a href="" class="text-secondary me-xl-4 me-3">
-                        <a href="#" class="text-secondary me-xl-4 me-3">
-                            <span class="text-lg fab fa-instagram" aria-hidden="true"></span>
-                        </a>
-                        <a href="tel:+998983359999" class="text-secondary me-xl-4 me-3">
-                            <span class="text-lg fas fa-phone" aria-hidden="true"></span>
-                        </a>
-                        <a href="mailto:jkgorod@gmail.com" class="text-secondary me-xl-4 me-3">
-                            <span class="text-lg fas fa-envelope" aria-hidden="true"></span>
-                        </a>
                 </div>
                 <div class="col-md-2 col-6 ms-lg-auto mb-md-0 mb-4">
                     <h6 class="text-sm">Company</h6>

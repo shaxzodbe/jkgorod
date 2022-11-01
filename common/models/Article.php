@@ -49,7 +49,8 @@ class Article extends \yii\db\ActiveRecord
             [['title_uz', 'title_ru', 'description_uz', 'description_ru', 'image'], 'required'],
             [['created_at', 'updated_at'], 'default', 'value' => null],
             [['created_at', 'updated_at'], 'integer'],
-            [['title_uz', 'title_ru', 'description_uz', 'description_ru'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'description_uz', 'description_ru'], 'string', 'max' => 2000],
             [['image'], 'string', 'max' => 2000],
         ];
     }

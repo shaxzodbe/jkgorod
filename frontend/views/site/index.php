@@ -25,7 +25,7 @@ $this->title = "jkgorod"
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h3 class="mb-5" spellcheck="false"><?= Yii::t('app', 'About our activities') ?></h3>
+                <h3 class="mb-3 mb-xl-5" spellcheck="false"><?= Yii::t('app', 'About our activities') ?></h3>
             </div>
             <?= $this->render('_about_section', [
                 'model' => $aboutData,
@@ -38,7 +38,7 @@ $this->title = "jkgorod"
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 text-center">
-                <h3 class="mb-5" spellcheck="false"><?= Yii::t('app', 'View Properties for Sale') ?></h3>
+                <h3 class="mb-3 mb-xl-5" spellcheck="false"><?= Yii::t('app', 'View Properties for Sale') ?></h3>
             </div>
             <?= $this->render('_sale_section', [
                 'model' => $saleData,
@@ -55,7 +55,7 @@ $this->title = "jkgorod"
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3 class="mb-5" spellcheck="false"><?= Yii::t('app', 'Blog') ?></h3>
+                <h3 class="mb-3 mb-xl-5" spellcheck="false"><?= Yii::t('app', 'Blog') ?></h3>
             </div>
 
             <?= $this->render('_article_section', [
@@ -80,26 +80,26 @@ $this->title = "jkgorod"
 <section class="py-5" id="contact">
     <div class="container">
         <div class="col-12">
-            <h3 class="mb-5 text-center" spellcheck="false"><?= Yii::t('app', 'Contacts') ?></h3>
+            <h3 class="mb-3 mb-xl-5 text-center" spellcheck="false"><?= Yii::t('app', 'Contacts') ?></h3>
         </div>
         <div class="row justify-content-between">
 
             <div class="col-lg-4 d-flex align-items-stretch">
                 <div class="info">
-                    <div class="address">
+                    <div class="address mb-2">
                         <h4>Локация:</h4>
                         <a href="" class="d-flex me-xl-4 me-3">
-                            <span class="text-lg fas fa-map" aria-hidden="true"></span>
+                            <span class="text-lg fas fa-map" aria-hidden="true" style="margin-top: 3px"></span>
                             <p class="ms-2">100007, Ташкент, Яшнабадский район, Мавляна Риёзи, 47</p>
                         </a>
                     </div>
-                    <div class="email"><h4>Электронная почта:</h4>
+                    <div class="email mb-2"><h4>Электронная почта:</h4>
                         <a href="mailto:jkgorod@gmail.com" class="me-xl-4 me-3">
                             <span class="text-lg fas fa-envelope" aria-hidden="true"></span>
                             <p class="d-inline-block">jkgorod@gmail.com</p>
                         </a>
                     </div>
-                    <div class="phone"><h4>Телефон:</h4>
+                    <div class="phone mb-2"><h4>Телефон:</h4>
                         <a href="tel:+998983359999" class="me-xl-4 me-3">
                             <span class="text-lg fas fa-phone" aria-hidden="true"></span>
                             <p class="d-inline-block">+998 97 335 9999</p>

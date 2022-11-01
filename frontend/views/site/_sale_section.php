@@ -37,9 +37,9 @@ $language = Yii::$app->session->get('language');
                         <div class="d-flex align-items-center">
                             <i class="fa fa-sitemap text-gradient text-warning text-lg mb-0"
                                aria-hidden="true"></i>
-                            <div class="ms-3">
+                            <div class="ms-xl-3 ms-1">
                                 <p class="text-xs mb-0"><?=Yii::t('app','Surface')?></p>
-                                <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['surface']?>m
+                                <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['surface']?><?=Yii::t('app','m')?>
                                     <small class="position-absolute justify-align-top mt-n0">2</small>
                                 </h6>
                             </div>
@@ -48,7 +48,7 @@ $language = Yii::$app->session->get('language');
                     <div class="col-4">
                         <div class="d-flex align-items-center">
                             <i class="fa fa-bed text-gradient text-warning text-lg mb-0" aria-hidden="true"></i>
-                            <div class="ms-3">
+                            <div class="ms-xl-3 ms-1">
                                 <p class="text-xs mb-0"><?=Yii::t('app','Bedrooms')?></p>
                                 <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['bedrooms']?></h6>
                             </div>
@@ -58,7 +58,7 @@ $language = Yii::$app->session->get('language');
                         <div class="d-flex align-items-center">
                             <i class="fa fa-bath text-gradient text-warning text-lg mb-0"
                                aria-hidden="true"></i>
-                            <div class="ms-3">
+                            <div class="ms-xl-3 ms-1">
                                 <p class="text-xs mb-0"><?=Yii::t('app','Bathrooms')?></p>
                                 <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['bathrooms']?></h6>
                             </div>

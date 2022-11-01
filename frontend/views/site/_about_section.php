@@ -11,7 +11,7 @@ $language = Yii::$app->session->get('language');
 
 <?php foreach ($model as $item => $value): ?>
     <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card info bg-white shadow-lg p-4">
+        <div class="card info bg-white shadow-lg p-1 p-xl-4">
             <?php if ($model[$item]['icon'] === 1): ?>
                 <div class="icon icon-shape mx-auto">
                     <svg class="text-warning" width="25px" height="25px" viewBox="0 0 42 42" version="1.1"

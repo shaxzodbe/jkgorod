@@ -1,4 +1,4 @@
-
+getContext('2d', { willReadFrequently: true });
 // Alert dismissible function
 document.querySelector('.loopple-alert.loopple-alert-dismissible .close').onclick = function() {
  document.querySelector('.loopple-alert').classList.add('loopple-opacity-0');
@@ -6,3 +6,4 @@ document.querySelector('.loopple-alert.loopple-alert-dismissible .close').onclic
    document.querySelector('.loopple-alert').remove();
  }, 1000);
 }
+ 
