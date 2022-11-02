@@ -16,4 +16,4 @@ jobs:
           server: ftp.jkgorod.uz
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /public_html/jkgorod/
+          server-dir: /home/jkgorod1/public_html
