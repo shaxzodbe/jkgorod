@@ -13,20 +13,17 @@ $language = Yii::$app->session->get('language');
     <div class="col-lg-4 mb-lg-3 mb-4">
         <div class="card">
             <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-                <a href="" class="d-block">
+                <div href="" class="d-block">
                     <img src="<?php echo $value->getImageUrl() ?>"
                          class="img-fluid border-radius-lg shadow"
                          style="min-height: 212px;">
-                </a>
+
+                </div>
             </div>
 
             <div class="card-body pt-3">
                 <div class="d-flex align-items-center">
                     <div>
-<!--                        <a href="javascript:;"-->
-<!--                           class="card-title h4 d-block text-darker font-weight-bolder mb-0">-->
-<!--                            --><?php //echo $model[$item]['cost'] ?><!-- USD-->
-<!--                        </a>-->
                         <p class="card-description mb-4 text-sm">
                             <?php echo $model[$item]['info_'.$language]?>
                         </p>
@@ -49,8 +46,8 @@ $language = Yii::$app->session->get('language');
                         <div class="d-flex align-items-center">
                             <i class="fa fa-bed text-gradient text-warning text-lg mb-0" aria-hidden="true"></i>
                             <div class="ms-xl-3 ms-1">
-                                <p class="text-xs mb-0"><?=Yii::t('app','Bedrooms')?></p>
-                                <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['bedrooms']?></h6>
+                                <p class="text-xs mb-0"><?php echo ($model[$item]['bedrooms'] > 3) ? Yii::t('app','Hall') : Yii::t('app','Bedrooms') ?></p>
+                                <h6 class="font-weight-bolder mb-0"><?php if ($model[$item]['bedrooms'] <= 3) { echo (int)$model[$item]['bedrooms']; } else if ($model[$item]['bedrooms'] > 3) { echo $model[$item]['bedrooms'] . Yii::t('app','m') . '<small class="position-absolute justify-align-top mt-n0">2</small>'; } ?></h6>
                             </div>
                         </div>
                     </div>
@@ -59,8 +56,11 @@ $language = Yii::$app->session->get('language');
                             <i class="fa fa-bath text-gradient text-warning text-lg mb-0"
                                aria-hidden="true"></i>
                             <div class="ms-xl-3 ms-1">
-                                <p class="text-xs mb-0"><?=Yii::t('app','Bathrooms')?></p>
-                                <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['bathrooms']?></h6>
+                                <p class="text-xs mb-0">
+                                    <?php if ($model[$item]['bathrooms'] < 13) { echo Yii::t('app','Kitchen'); } else if (($model[$item]['bathrooms'] < 20) && ($model[$item]['bathrooms'] > 13)) { echo Yii::t('app','Hall'); } else { echo Yii::t('app','Balcony'); }?></p>
+                                <h6 class="font-weight-bolder mb-0"><?php echo $model[$item]['bathrooms']?><?=Yii::t('app','m')?>
+                                    <small class="position-absolute justify-align-top mt-n0">2</small>
+                                </h6>
                             </div>
                         </div>
                     </div>
@@ -69,4 +69,3 @@ $language = Yii::$app->session->get('language');
         </div>
     </div>
 <?php endforeach ?>
-

@@ -22,6 +22,9 @@ return array(
     'Surface' => 'Площадь',
     'Bedrooms' => 'Спальни',
     'Bathrooms' => 'Ванная',
+    'Kitchen' => 'Кухня',
+    'Hall' => 'Гостинная',
+    'Balcony' => 'Балкон',
     'Lovely and cosy apartment' => 'Прекрасная и уютная квартира',
     'Siri\'s latest trick is offering a hands-free TV viewing experience, that will allow
                             consumers to turn on or off their television, change inputs, fast forward.' => 'Последний трюк Siri заключается в предоставлении возможности просмотра телевизора без помощи рук, что позволит
