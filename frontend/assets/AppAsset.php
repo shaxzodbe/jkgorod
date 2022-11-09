@@ -13,18 +13,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap',
-        'https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-icons.css',
-        'https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-svg.css',
         'css/loopple.css',
     ];
     public $js = [
-        'https://loopple.s3.eu-west-3.amazonaws.com/soft-ui-design-system/js/core/bootstrap.min.js',
         'https://kit.fontawesome.com/42d5adcbca.js',
-//        'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/countup.min.js',
-//        'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/flatpickr.min.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
         'yii\bootstrap5\BootstrapAsset',
     ];
 }
