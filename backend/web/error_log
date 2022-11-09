@@ -1,0 +1,104 @@
+[01-Nov-2022 12:20:46 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:46 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:47 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:47 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:50 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:50 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:51 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:51 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:52 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:52 UTC] PHP Warning:  require(/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php): failed to open stream: No such file or directory in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 12:20:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/jkgorod1/public_html/backend/web/../../common/config/main-local.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jkgorod1/public_html/backend/web/index.php on line 13
+[01-Nov-2022 13:09:38 UTC] An Error occurred while handling another error:
+yii\web\ForbiddenHttpException: Login Required in /home/jkgorod1/public_html/vendor/yiisoft/yii2/web/User.php:461
+Stack trace:
+#0 /home/jkgorod1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home/jkgorod1/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\web\ErrorAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/jkgorod1/public_html/vendor/yiisoft/yii2/web/Controller.php(222): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#7 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#8 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('error', Array)
+#9 /home/jkgorod1/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#10 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#11 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#12 {main}
+Previous exception:
+PDOException: SQLSTATE[42000] [1044] Access denied for user 'jkgorod1_jkgorod_user'@'localhost' to database 'jkgorod1_jkgorod_database' in /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct('mysql:host=loca...', 'jkgorod1_jkgoro...', '54wQ41K[Wc;N', NULL)
+#1 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare(true)
+#6 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(320): yii\db\Command->queryAll()
+#8 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#13 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#14 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#15 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#16 /home/jkgorod1/public_html/common/models/User.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#17 /home/jkgorod1/public_html/common/models/LoginForm.php(74): common\models\User::findByUsername('Shaxzod')
+#18 /home/jkgorod1/public_html/common/models/LoginForm.php(45): common\models\LoginForm->getUser()
+#19 /home/jkgorod1/public_html/vendor/yiisoft/yii2/validators/InlineValidator.php(77): common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), '123456789')
+#20 /home/jkgorod1/public_html/vendor/yiisoft/yii2/validators/Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#21 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Model.php(368): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#22 /home/jkgorod1/public_html/common/models/LoginForm.php(59): yii\base\Model->validate()
+#23 /home/jkgorod1/public_html/backend/controllers/SiteController.php(76): common\models\LoginForm->login()
+#24 [internal function]: backend\controllers\SiteController->actionLogin()
+#25 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#26 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#27 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#28 /home/jkgorod1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#29 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 /home/jkgorod1/public_html/backend/web/index.php(18): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[42000] [1044] Access denied for user 'jkgorod1_jkgorod_user'@'localhost' to database 'jkgorod1_jkgorod_database' in /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare(true)
+#4 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(320): yii\db\Command->queryAll()
+#6 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(266): yii\db\ActiveRecord::getTableSchema()
+#11 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(238): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#12 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(195): yii\db\ActiveRecord::filterCondition(Array, Array)
+#13 /home/jkgorod1/public_html/vendor/yiisoft/yii2/db/BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(Array)
+#14 /home/jkgorod1/public_html/common/models/User.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#15 /home/jkgorod1/public_html/common/models/LoginForm.php(74): common\models\User::findByUsername('Shaxzod')
+#16 /home/jkgorod1/public_html/common/models/LoginForm.php(45): common\models\LoginForm->getUser()
+#17 /home/jkgorod1/public_html/vendor/yiisoft/yii2/validators/InlineValidator.php(77): common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), '123456789')
+#18 /home/jkgorod1/public_html/vendor/yiisoft/yii2/validators/Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Model.php(368): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 /home/jkgorod1/public_html/common/models/LoginForm.php(59): yii\base\Model->validate()
+#21 /home/jkgorod1/public_html/backend/controllers/SiteController.php(76): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('login', Array)
+#26 /home/jkgorod1/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#27 /home/jkgorod1/public_html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /home/jkgorod1/public_html/backend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1044
+    [2] => Access denied for user 'jkgorod1_jkgorod_user'@'localhost' to database 'jkgorod1_jkgorod_database'
+)
+
